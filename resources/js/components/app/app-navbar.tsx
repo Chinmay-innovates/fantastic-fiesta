@@ -21,7 +21,7 @@ export const AppNavbar = () => {
                 LaraStore
             </Link>
 
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 p-2">
                 {/* Cart Dropdown */}
                 {user && (
                     <DropdownMenu>
