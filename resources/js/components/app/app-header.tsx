@@ -1,6 +1,6 @@
-import { Breadcrumbs } from '@/components/core/breadcrumbs';
-import { Icon } from '@/components/core/icon';
-import { UserMenuContent } from '@/components/core/user-menu-content';
+import { Breadcrumbs } from '@/components/Core/breadcrumbs';
+import { Icon } from '@/components/Core/icon';
+import { UserMenuContent } from '@/components/Core/user-menu-content';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';

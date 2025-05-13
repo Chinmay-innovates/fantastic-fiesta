@@ -2,8 +2,8 @@ import { Head, useForm } from '@inertiajs/react';
 import { LoaderCircle } from 'lucide-react';
 import { FormEventHandler } from 'react';
 
-import InputError from '@/components/core/input-error';
-import TextLink from '@/components/core/text-link';
+import InputError from '@/components/Core/input-error';
+import TextLink from '@/components/Core/text-link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';

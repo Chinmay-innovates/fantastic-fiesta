@@ -1,4 +1,4 @@
-import { Icon } from '@/components/core/icon';
+import { Icon } from '@/components/Core/icon';
 import { SidebarGroup, SidebarGroupContent, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@/components/ui/sidebar';
 import { type NavItem } from '@/types';
 import { type ComponentPropsWithoutRef } from 'react';

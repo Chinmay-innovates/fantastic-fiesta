@@ -1,6 +1,6 @@
-import { NavFooter } from '@/components/core/nav-footer';
-import { NavMain } from '@/components/core/nav-main';
-import { NavUser } from '@/components/core/nav-user';
+import { NavFooter } from '@/components/Core/nav-footer';
+import { NavMain } from '@/components/Core/nav-main';
+import { NavUser } from '@/components/Core/nav-user';
 import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@/components/ui/sidebar';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
@@ -18,7 +18,7 @@ const mainNavItems: NavItem[] = [
 const footerNavItems: NavItem[] = [
     {
         title: 'Repository',
-        href: 'https://github.com/laravel/react-starter-kit',
+        href: 'https://github.com/Chinmay-innovates/fantastic-fiesta',
         icon: Folder,
     },
     {
