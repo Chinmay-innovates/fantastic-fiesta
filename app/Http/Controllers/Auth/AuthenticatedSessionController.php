@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use Inertia\Response;
+use \Symfony\Component\HttpFoundation\Response as InertiaResponse;
 
 class AuthenticatedSessionController extends Controller
 {
@@ -27,13 +28,22 @@ class AuthenticatedSessionController extends Controller
     /**
      * Handle an incoming authentication request.
      */
-    public function store(LoginRequest $request): RedirectResponse
+    public function store(LoginRequest $request): InertiaResponse
     {
         $request->authenticate();
 
         $request->session()->regenerate();
 
-        return redirect()->intended(route('dashboard', absolute: false));
+        /** @var \App\Models\User $user */
+          $user = Auth::user();
+          $route = '/';
+        if($user->hasAnyRole('admin','vendor')) {
+            return Inertia::location(route('filament.admin.pages.dashboard'));
+        }else if($user->hasRole('user')) {
+            $route = route('dashboard', absolute: false);
+        }
+
+        return redirect()->intended($route);
     }
 
     /**
